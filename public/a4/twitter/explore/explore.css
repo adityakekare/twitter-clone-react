@@ -2,7 +2,7 @@
 	color: blue;
 	vertical-align: middle;
 	padding-left: 10px;
-	padding-top: 3px;
+	padding-top: 2px;
 }
 
 .fa.fa-search{
@@ -12,7 +12,7 @@
 .wd-search-glass{
 	position: absolute;
 	padding-left: 8px;
-	padding-top: 7px;
+	padding-top: 5px;
 	z-index: 1;
 }
 
@@ -163,10 +163,14 @@
 	background-color: black;
 }
 
-.form-control.rounded{
+.form-control{
 	background-color: #353536;
 	color: white;
 	padding-left: 30px;
+	border-style: none;
+	border-radius: 30px;
+	border-bottom-right-radius: 30px;
+	margin-right: 15px;
 }
 
 .fa.fa-home{
