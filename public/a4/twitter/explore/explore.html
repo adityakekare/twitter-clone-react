@@ -8,9 +8,6 @@
     <link rel="stylesheet" type="text/css" href="explore.css">
 </head>
 <body>
-	<!-- col-sm-2 col-md-2 col-l-1 col-xl-2 col-xxl-2
-	col-sm-10 col-md-10 col-l-8 col-xl-6 col-xxl-6
-	col-sm-0 col-md-0 col-l-3 col-xl-4 col-xxl-4 -->
 <div class="wd-page">
 	<div class="container">
 		
@@ -18,26 +15,26 @@
 		    <div class="col-lg-2 col-md-1 col-2">
 		        <nav class="wd-first-column">
 		        	<a href="#" class="list-group-item list-group-item-action">
-		        	<i class="fa fa-twitter"></i>
+		        	<i class="fa fa-twitter fa-2x"></i>
 		        	</a>
 		        	<ul class="nav flex-column">
 					    <li class="nav-item"><a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-					        <i class="fa fa-home"></i>  Home
+					        <i class="fa fa-home"></i><span class="wd-menu-text">  Home</span>
 					    </a></li>
 					    <li class="nav-item"><a href="#" class="list-group-item list-group-item-action">
-								<i class="fa fa-hashtag"></i>  Explore</a></li>
+						<i class="fa fa-hashtag"></i><span class="wd-menu-text">Explore</span></a></li>
 					    <li class="nav-item"><a href="#" class="list-group-item list-group-item-action">
-								<i class="fa fa-bell"></i>  Notifications</a></li>
+						<i class="fa fa-bell"></i><span class="wd-menu-text">Notifications</span></a></li>
 					    <li class="nav-item"><a href="#" class="list-group-item list-group-item-action">
-								<i class="fa fa-envelope"></i>  Messages</a></li>
+						<i class="fa fa-envelope"></i><span class="wd-menu-text">Messages</span></a></li>
 					    <li class="nav-item"><a href="#" class="list-group-item list-group-item-action">
-					    <i class="fa fa-bookmark"></i>  Bookmarks</a></li>
+					    <i class="fa fa-bookmark"></i><span class="wd-menu-text">Bookmarks</span></a></li>
 					    <li class="nav-item"><a href="#" class="list-group-item list-group-item-action">
-					    <i class="fa fa-list"></i>  Lists</a></li>
+					    <i class="fa fa-list"></i><span class="wd-menu-text">Lists</span></a></li>
 					    <li class="nav-item"><a href="#" class="list-group-item list-group-item-action">
-					    <i class="fa fa-user"></i> Profile</a></li>
+					    <i class="fa fa-user"></i><span class="wd-menu-text">Profile</span></a></li>
 					    <li class="nav-item"><a href="#" class="list-group-item list-group-item-action">
-					    <i class="fa fa-ellipsis-h"></i> More</a></li>
+					    <i class="fa fa-ellipsis-h"></i><span class="wd-menu-text">More</span></a></li>
 				    </ul>
 				    <button class="btn btn-primary btn-sm tweetBtn" type="button">
    				 		Tweet
@@ -46,8 +43,8 @@
 		
 		    </div>
 		    <div class="col-lg-6 col-md-11 col-10">
+		    	<span class="wd-search-glass"><i class="fa fa-search"></i></span>
 		        <div class="input-group rounded">
-				    <i class="fa fa-search"></i>
 				  <input type="search" class="form-control rounded" placeholder="Search Twitter" aria-label="Search"
 				    aria-describedby="search-addon" />
 				    <i class="fa fa-cog fa-2x"></i>
@@ -55,25 +52,28 @@
 
 			<ul class="nav nav-tabs">
 			    <li class="nav-item">
-			        <a class="nav-link active" href="#">For you</a>
+			        <a class="nav-link active" href="#"><span class="wd-nav-text-selected">For you</span></a>
 			    </li>
 			    <li class="nav-item">
-			        <a class="nav-link" href="#">Trending</a>
+			        <a class="nav-link" href="#"><span class="wd-nav-text">Trending</span></a>
 			    </li>
 			    <li class="nav-item">
-			        <a class="nav-link" href="#">News</a>
+			        <a class="nav-link" href="#"><span class="wd-nav-text">News</span></a>
 			    </li>
 			    <li class="nav-item">
-			        <a class="nav-link" href="#">Sports</a>
+			        <a class="nav-link" href="#"><span class="wd-nav-text">Sports</span></a>
 			    </li>
 			    <li class="nav-item">
-			        <a class="nav-link" href="#">Entertainment</a>
+			        <a class="nav-link" href="#"><span class="wd-nav-text-vanish">Entertainment</span></a>
 			    </li>
 			</ul>
 
 		<ul class="list-group">
 			<li class="list-group-item">
-				<img src="starship.jpg" class="wd-topic-heading-image">
+				<div class="wd-head-image">
+					<img src="starship.jpg" class="wd-topic-heading-image">
+					<div class="wd-img-text">SpaceX's Starship</div>
+				</div>
 			</li>
 		    <li class="list-group-item">
 		    	<img src="react.png" class="wd-topic-img"/>

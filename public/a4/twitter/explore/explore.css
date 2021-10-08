@@ -2,11 +2,18 @@
 	color: blue;
 	vertical-align: middle;
 	padding-left: 10px;
+	padding-top: 3px;
 }
 
-.fa-search{
-	position: relative;
-	float: left;
+.fa.fa-search{
+	color: darkgray;
+}
+
+.wd-search-glass{
+	position: absolute;
+	padding-left: 8px;
+	padding-top: 7px;
+	z-index: 1;
 }
 
 .nav-tabs{
@@ -18,6 +25,15 @@
 	margin-top: 10px;
     padding: 12px 79px;
     border-radius: 23px;
+    font-weight: bold;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #000;
+    border-color: black;
+    border-bottom-color: #1F1FD1;
+    border-width: 3px;
 }
 
 .btn-primary.btn-sm.followBtn{
@@ -140,14 +156,101 @@
 
 .nav.nav-tabs{
 	background-color: black;
+	border-bottom-color: gray;
 }
 
 .wd-first-column{
 	background-color: black;
 }
 
-.form-control-rounded{
-	background-color: darkgray;
+.form-control.rounded{
+	background-color: #353536;
 	color: white;
+	padding-left: 30px;
+}
+
+.fa.fa-home{
+	padding-right: 12px;
+}
+
+.fa.fa-hashtag{
+	padding-right: 15px;
+}
+
+.fa.fa-bell{
+	padding-right: 15px;
+}
+
+
+.fa.fa-envelope{
+	padding-right: 15px;
+}
+
+
+.fa.fa-bookmark{
+	padding-right: 19px;
+}
+
+
+.fa.fa-list{
+	padding-right: 15px;
+}
+
+
+.fa.fa-user{
+	padding-right: 19px;
+}
+
+.fa.fa-ellipsis-h{
+	padding-right: 19px;
+}
+
+.wd-nav-text{
+	color: gray;
+}
+
+.wd-nav-text-vanish{
+	color: gray;
+}
+
+.wd-nav-text-selected{
+	color: white;
+}
+
+.nav-link{
+	background-color: black;
+}
+
+.nav-link.active{
+	background-color: black;
+}
+
+
+@media screen and (max-width: 1300px) {
+      .wd-menu-text {
+        display: none; }
+      .tweetBtn {
+        display: none; } 
+      .wd-nav-text-vanish{
+      	display: none;
+      }
+}
+
+.wd-head-image.h1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+}
+
+.wd-img-text{
+	position: absolute;
+	bottom: 15px;
+	margin-left: 10px;
+	font-size: 30px;
 }
 
