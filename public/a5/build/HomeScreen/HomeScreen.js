@@ -6,7 +6,7 @@ import PostList from "../PostList/PostList.js";
     $('#wd-home').append(`
         <div class="row">
         <div class="col-lg-2 col-md-1 col-2">
-            ${NavigationSidebar()}
+            ${NavigationSidebar("home")}
         </div>
         <div class="col-lg-6 col-md-11 col-10">
             ${PostList()}
