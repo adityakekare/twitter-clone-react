@@ -1,0 +1,39 @@
+.btn-primary.override-bs {
+    background-color: #a90dfd;
+    border-color: #fd0d51;
+    border-width: 10px;
+    border-radius: 20px;
+    border-style: dashed;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.col.bg-color-red{
+	background-color: red;
+}
+
+.col.bg-color-blue.fg-color-white{
+	background-color: blue;
+	color: white;
+}
+
+.col-4.bg-color-yellow{
+	background-color: yellow;
+}
+
+.col-8.bg-color-red{
+	background-color: red;
+}
+
+.col-2.bg-color-blue.fg-color-white{
+	background-color: blue;
+	color: white;
+}
+
+.col-8.bg-color-yellow{
+	background-color: yellow;
+}
+
+.col-2.bg-color-red{
+	background-color: red;
+}
