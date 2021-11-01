@@ -1,4 +1,4 @@
-import NavigationSideBar from "../NavigationSideBar";
+import NavigationSidebar from "../NavigationSideBar";
 import PostSummaryList from "../PostSummaryList";
 import PostList from "../PostList/PostList";
 
@@ -6,7 +6,7 @@ const Home = () => {
     return(
         <div className="row">
         <div className="col-lg-2 col-md-1 col-2">
-            <NavigationSideBar active="home"/>
+            <NavigationSidebar active="home"/>
         </div>
         <div className="col-lg-6 col-md-11 col-10">
             <PostList />

@@ -1,11 +1,9 @@
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 // import './vendors/fontawesome/css/all.min.css';
-import HelloWorld from "./components/a6/HelloWorld";
 import Practice from "./components/a6/Practice";
 import ExploreScreen from "./components/a6/Build/ExploreScreen/ExploreScreen"
 import Home from "./components/a6/Build/HomeScreen"
-import Build from "./components/a6/Build";
 import {BrowserRouter, Route} from "react-router-dom";
 
 

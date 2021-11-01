@@ -1,4 +1,6 @@
 import React from "react";
+import ExploreScreen from "../ExploreScreen/ExploreScreen";
+import Home from "../HomeScreen"
 
 const NavigationSidebar = (
         {
@@ -13,10 +15,10 @@ const NavigationSidebar = (
                     <i className="fa fa-twitter fa-2x"></i>
                     </a>
                     <ul className="nav flex-column">
-                        <li className="nav-item"><a href="../HomeScreen/home.html" className="list-group-item list-group-item-action" aria-current="true">
+                        <li className="nav-item"><a href={Home} className="list-group-item list-group-item-action" aria-current="true">
                             <i className="fa fa-home"></i><span className="wd-menu-text">  Home</span>
                         </a></li>
-                        <li className="nav-item"><a href="../ExploreScreen/explore.html" className="list-group-item list-group-item-action active">
+                        <li className="nav-item"><a href={ExploreScreen} className="list-group-item list-group-item-action active">
                         <i className="fa fa-hashtag"></i><span className="wd-menu-text">Explore</span></a></li>
                         <li className="nav-item"><a href="#" className="list-group-item list-group-item-action">
                         <i className="fa fa-bell"></i><span className="wd-menu-text">Notifications</span></a></li>
