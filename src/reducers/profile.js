@@ -1,7 +1,21 @@
 import profileData from './data/profile.json';
 
-const profile = (state = profileData) => {
-    return(state);
+const profile = (state = profileData, action) => {
+    switch (action.type) {
+        case 'create-profileData':
+            return state.map(data => {
+                if (data.id === action.profileData.id) {
+                    return data;
+                } else {
+                    return data;
+                }
+            });
+
+        default:
+            return (state);
+
+    }
 };
 
 export default profile;
+

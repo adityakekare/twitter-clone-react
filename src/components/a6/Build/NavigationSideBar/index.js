@@ -1,6 +1,7 @@
 import React from "react";
 import ExploreScreen from "../ExploreScreen/ExploreScreen";
 import Home from "../HomeScreen"
+import {Link} from "react-router-dom";
 
 const NavigationSidebar = (
         {
@@ -11,15 +12,20 @@ const NavigationSidebar = (
         return(
             <div>
             <nav className="wd-first-column">
-                    <a href="#" className="list-group-item list-group-item-action">
+                <Link to="/a6/" className="list-group-item list-group-item-action">
                     <i className="fa fa-twitter fa-2x"></i>
-                    </a>
+                </Link>
                     <ul className="nav flex-column">
-                        <li className="nav-item"><a href={Home} className="list-group-item list-group-item-action" aria-current="true">
-                            <i className="fa fa-home"></i><span className="wd-menu-text">  Home</span>
-                        </a></li>
-                        <li className="nav-item"><a href={ExploreScreen} className="list-group-item list-group-item-action active">
-                        <i className="fa fa-hashtag"></i><span className="wd-menu-text">Explore</span></a></li>
+                        <li className="nav-item">
+                            <Link to="/a6/twitter/home"
+                                  className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
+                            <i className="fa fa-home"/><span className="wd-menu-text">  Home</span>
+                            </Link></li>
+                        <li className="nav-item">
+                            <Link to="/a6/twitter/explore"
+                                  className={`list-group-item list-group-item-action ${active === 'explore' ? 'active' : ''}`}>
+                        <i className="fa fa-hashtag"/><span className="wd-menu-text">Explore</span>
+                            </Link></li>
                         <li className="nav-item"><a href="#" className="list-group-item list-group-item-action">
                         <i className="fa fa-bell"></i><span className="wd-menu-text">Notifications</span></a></li>
                         <li className="nav-item"><a href="#" className="list-group-item list-group-item-action">
@@ -44,15 +50,20 @@ const NavigationSidebar = (
         return(
             <div>
             <nav className="wd-first-column">
-                    <a href="#" className="list-group-item list-group-item-action">
+                <Link to="/a6/" className="list-group-item list-group-item-action">
                     <i className="fa fa-twitter fa-2x"></i>
-                    </a>
+                </Link>
                     <ul className="nav flex-column">
-                        <li className="nav-item"><a href="../HomeScreen/home.html" className="list-group-item list-group-item-action active" aria-current="true">
-                            <i className="fa fa-home"></i><span className="wd-menu-text">  Home</span>
-                        </a></li>
-                        <li className="nav-item"><a href="../ExploreScreen/explore.html" className="list-group-item list-group-item-action">
-                        <i className="fa fa-hashtag"></i><span className="wd-menu-text">Explore</span></a></li>
+                        <li className="nav-item">
+                            <Link to="/a6/twitter/home"
+                                  className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
+                                <i className="fa fa-home"/><span className="wd-menu-text">  Home</span>
+                            </Link></li>
+                        <li className="nav-item">
+                            <Link to="/a6/twitter/explore"
+                                  className={`list-group-item list-group-item-action ${active === 'explore' ? 'active' : ''}`}>
+                                <i className="fa fa-hashtag"/><span className="wd-menu-text">Explore</span>
+                            </Link></li>
                         <li className="nav-item"><a href="#" className="list-group-item list-group-item-action">
                         <i className="fa fa-bell"></i><span className="wd-menu-text">Notifications</span></a></li>
                         <li className="nav-item"><a href="#" className="list-group-item list-group-item-action">
@@ -77,15 +88,20 @@ const NavigationSidebar = (
         return(
             <div>
             <nav className="wd-first-column">
-                    <a href="#" className="list-group-item list-group-item-action">
+                <Link to="/a6/" className="list-group-item list-group-item-action">
                     <i className="fa fa-twitter fa-2x"></i>
-                    </a>
+                </Link>
                     <ul className="nav flex-column">
-                        <li className="nav-item"><a href="../HomeScreen/home.html" className="list-group-item list-group-item-action active" aria-current="true">
-                            <i className="fa fa-home"></i><span className="wd-menu-text">  Home</span>
-                        </a></li>
-                        <li className="nav-item"><a href="../ExploreScreen/explore.html" className="list-group-item list-group-item-action">
-                        <i className="fa fa-hashtag"></i><span className="wd-menu-text">Explore</span></a></li>
+                        <li className="nav-item">
+                            <Link to="/a6/twitter/home"
+                                  className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
+                                <i className="fa fa-home"/><span className="wd-menu-text">  Home</span>
+                            </Link></li>
+                        <li className="nav-item">
+                            <Link to="/a6/twitter/explore"
+                                  className={`list-group-item list-group-item-action ${active === 'explore' ? 'active' : ''}`}>
+                                <i className="fa fa-hashtag"/><span className="wd-menu-text">Explore</span>
+                            </Link></li>
                         <li className="nav-item"><a href="#" className="list-group-item list-group-item-action">
                         <i className="fa fa-bell"></i><span className="wd-menu-text">Notifications</span></a></li>
                         <li className="nav-item"><a href="#" className="list-group-item list-group-item-action">

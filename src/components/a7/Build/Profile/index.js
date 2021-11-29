@@ -1,14 +1,14 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import WhoToFollowListItem from "./WhoToFollowListItem";
+import ProfileItem from "./ProfileItem";
 
+const profileData = (state) => state.profile;
 const Profile = () => {
-	const profileData = useSelector((state) => state.profile);
-	
+	const data = useSelector(profileData);
     return(
             
-				who.map(who=>{
-         			return(<WhoToFollowListItem who={who}/>
+				data.map(data=>{
+         			return(<ProfileItem key={data.id} data={data} />
          				);
      })
  

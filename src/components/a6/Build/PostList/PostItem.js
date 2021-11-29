@@ -1,5 +1,5 @@
-const PostItem = ({
-		post = {   "image": "elon.jpg",
+const PostItem = (
+		post = {   "image": "../../images/elon.jpg",
         "author": "Elon Musk",
         "handle": "elonmusk",
         "time": "23h",
@@ -8,7 +8,7 @@ const PostItem = ({
         "caption":"Countdown: Inspiration4 Mission to Space | Netflix Official Site",
         "text":"From training to launch to landing, this all-access docuseries rides along with the inspiration4 crew on the first all civlian orbital space.."
     }
-}) => {
+) => {
     return(
     	<>
             <li className="list-group-item">

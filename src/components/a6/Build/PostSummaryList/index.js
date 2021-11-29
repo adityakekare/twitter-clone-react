@@ -1,12 +1,12 @@
 import posts from "./posts.json";
 import PostSummaryItem from "./PostSummaryItem";
 
-const WhoToFollowList = () => {
+const PostSummaryList = () => {
     return(
     	<ul className="list-group">
     		<li className="list-group-item">
             <div className="wd-head-image">
-              <img src="starship.jpg" className="wd-topic-heading-image"/>
+              <img src="../../images/starship.jpg" className="wd-topic-heading-image"/>
             <div className="wd-img-text">SpaceXs Starship</div>
             </div>
             </li>
@@ -18,4 +18,4 @@ const WhoToFollowList = () => {
         </ul>
     );
 }
-export default WhoToFollowList;
+export default PostSummaryList;
