@@ -14,12 +14,15 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Credentials", "true");
     next();
 });
+
 app.get('/hello', (req, res) => {
     res.send('Hello!');
 });
 
 require('./services/movies-service')(app);
+require('./services/tweeter-service')(app);
+require('./services/profile-service')(app);
 
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
 
 

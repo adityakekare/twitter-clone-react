@@ -1,27 +1,3 @@
-.wd-dp{
-    margin: 8px;
-    float: left;
-    /* padding-bottom: 50%; */
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.wd-gray{
-    color: #808080;
-    margin: 0px;
-    display: inline;
-}
-
-.wd-nostyle{
-    list-style-type: none;
-}
-
-.wd-inner{
-    width: -webkit-fill-available;
-    padding: 0px !important;
-}
-
 .wd-iFirst{
     margin-right: 10px;
 }
@@ -42,18 +18,14 @@ a{
     float: right;
 }
 
-.wd-back{
-    position: sticky;
-    display: inline;
-}
-
-.wd-coverimg{
+.wd-profile-cover-img{
     width: 100%;
 }
 
-.wd-dpimg{
+.wd-disp-img{
     position: sticky;
     width: 150px;
+    height: 175px;
     /* float: left; */
     top: 170px;
     border: solid 5px #222222;
@@ -62,16 +34,12 @@ a{
 
 }
 
-/*.rounded{*/
-/*    border-radius: 150% !important;*/
-/*}*/
-
 .btn-light{
     border-color: grey !important;
     float: right;
 }
 
-.wd-lightText{
+.wd-profile-desc{
     line-height: 0px;
     color: #808080;
     margin: 0px;

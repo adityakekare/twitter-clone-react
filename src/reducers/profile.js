@@ -11,6 +11,9 @@ const profile = (state = profileData, action) => {
                 }
             });
 
+        case 'fetch-profile':
+            return action.profile;
+
         default:
             return (state);
 

@@ -1,12 +1,17 @@
 import tweetsJson from './data/tweets.json';
 
-console.log(tweetsJson);
+// console.log(tweetsJson);
 const tweets = (state = tweetsJson, action) => {
-    console.log(action);
+    // console.log(action);
     switch (action.type) {
+        case 'fetch-all-tweets':
+            return(
+                action.tweets
+            )
+
         case 'like-tweet':
             return state.map(tweet => {
-                if(tweet._id === action.post._id) {
+                if(tweet._id === action.tweet._id) {
                     if(tweet.liked === true) {
                         tweet.liked = false;
                         tweet.likes--;
@@ -19,11 +24,16 @@ const tweets = (state = tweetsJson, action) => {
                     return tweet;
                 }
             });
-            break;
+
         case 'delete-tweet':
-            return state.filter(tweet => tweet._id !== action.post._id);
-            break;
+            // console.log(tweet._id);
+            // console.log(action.tweet._id);
+            return state.filter(tweet => tweet._id !== action.tweet._id);
+
         case 'create-tweet':
+            if(action.tweet.tweet === undefined){
+                return action.tweet;
+            }
             const tweet = {
                 _id: (new Date()).getTime() + '',
                 "topic": "Web Development",
@@ -50,6 +60,5 @@ const tweets = (state = tweetsJson, action) => {
             return(state);
     }
 };
-
 
 export default tweets;

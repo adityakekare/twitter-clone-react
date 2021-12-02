@@ -1,5 +1,9 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
+import {deleteTweet}
+	from "../../../../services/twitterService";
+import {likeTweet} from "../../../../services/twitterService";
+
 
 const PostItem = (
 		post
@@ -8,10 +12,12 @@ const PostItem = (
 
 	const dispatch = useDispatch();
 	const deleteTweetClickHandler = () => {
-		dispatch({type: 'delete-tweet', post})
+		// dispatch({type: 'delete-tweet', post})
+		deleteTweet(dispatch, post);
 	};
 	const likeClickHandler = () => {
-		dispatch({type: 'like-tweet', post});
+		// dispatch({type: 'like-tweet', post});
+		likeTweet(dispatch, post);
 	};
 
 	post = post.posts;
