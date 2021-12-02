@@ -1,8 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 .idea
+/web-dev-node
 
 # dependencies
+/src/components/a8/web-dev-node
 /node_modules
 /.pnp
 .pnp.js
