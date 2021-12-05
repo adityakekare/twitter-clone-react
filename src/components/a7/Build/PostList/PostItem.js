@@ -8,10 +8,10 @@ const PostItem = (
 
 	const dispatch = useDispatch();
 	const deleteTweetClickHandler = () => {
-		dispatch({type: 'delete-tweet', post})
+		dispatch({type: 'delete-tweet', tweet: post})
 	};
 	const likeClickHandler = () => {
-		dispatch({type: 'like-tweet', post});
+		dispatch({type: 'like-tweet', tweet: post});
 	};
 
 	post = post.posts;

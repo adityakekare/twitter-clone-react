@@ -2,7 +2,7 @@ import tweetsJson from './data/tweets.json';
 
 // console.log(tweetsJson);
 const tweets = (state = tweetsJson, action) => {
-    // console.log(action);
+    console.log(action.tweet);
     switch (action.type) {
         case 'fetch-all-tweets':
             return(
@@ -26,8 +26,7 @@ const tweets = (state = tweetsJson, action) => {
             });
 
         case 'delete-tweet':
-            // console.log(tweet._id);
-            // console.log(action.tweet._id);
+            console.log(action.tweet._id);
             return state.filter(tweet => tweet._id !== action.tweet._id);
 
         case 'create-tweet':
