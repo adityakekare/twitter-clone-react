@@ -1,3 +1,24 @@
+.wd-title-text{
+    font-weight: bold;
+    margin-left: 1px;
+    font-size: 18px;
+}
+
+.wd-edit-title{
+    padding-left: 1px;
+    padding-right: 1px;
+    display: flex;
+}
+
+.wd-save-button{
+    margin-left: auto;
+}
+
+.fas.fa-times {
+    color: white;
+    font-size: 18px;
+}
+
 .wd-dp{
     margin: 8px;
     float: left;
@@ -51,6 +72,11 @@ a{
     width: 100%;
 }
 
+.wd-edit-details{
+    position: relative;
+    top: 6rem;
+}
+
 .wd-dpimg{
     position: sticky;
     width: 150px;
@@ -60,6 +86,13 @@ a{
     margin-top: -90px;
     border-radius: 90%;
 
+}
+
+.btn-save, .btn-save:focus{
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+    font-weight: bold;
 }
 
 /*.rounded{*/

@@ -1,12 +1,9 @@
 import React from "react";
-import {useState} from "react";
 import moment from 'moment';
-// import { useDispatch } from "react-redux";
+import {Link} from "react-router-dom";
 
 
 const Profile = (profileData) => {
-
-    const [buttonPop, setPopup] = useState(false);
 
     profileData = profileData.data
 
@@ -22,10 +19,12 @@ const Profile = (profileData) => {
             <span className="d-block wd-lightText px-5">7000 Tweets</span>
             <br />
             <div>
-                <img src={profileData.bannerPicture} alt={profileData.bannerPicture} className="wd-coverimg"></img>
+                <img src={profileData.bannerPicture} alt={profileData.bannerPicture} className="wd-coverimg"/>
                 <div className="pt-3 px-2">
-                    <img src={profileData.profilePicture} alt={profileData.profilePicture} className="wd-dpimg rounded-circle img-fluid"></img>
-                    <button className="btn btn-light rounded-pill" onClick={() => setPopup(true)}>Edit Profile</button>
+                    <img src={profileData.profilePicture} alt={profileData.profilePicture} className="wd-dpimg rounded-circle img-fluid"/>
+                    <Link to="/a7/twitter/edit-profile">
+                        <button className="btn btn-light rounded-pill">Edit Profile</button>
+                    </Link>
                 </div>
             </div>
             <p>

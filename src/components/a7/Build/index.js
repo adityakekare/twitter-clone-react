@@ -6,6 +6,7 @@ import PostSummaryList from "./PostSummaryList"
 import HomeScreen from "./HomeScreen";
 import ExploreScreen from "./ExploreScreen/ExploreScreen"
 import ProfileScreen from "./ProfileScreen";
+import EditProfile from "./EditProfile";
 import who from "../../../reducers/who";
 import tweets from "../../../reducers/tweets";
 import profile from "../../../reducers/profile";
@@ -23,6 +24,7 @@ const Build = () => {
     	    <Route path={["/", "/a7/twitter/home"]} exact={true} component={HomeScreen}/>
             <Route path={["/a7/twitter/explore"]} exact={true} component={ExploreScreen}/>
             <Route path={["/a7/twitter/profile"]} exact={true} component={ProfileScreen}/>
+            <Route path={["/a7/twitter/edit-profile"]} exact={true} component={EditProfile}/>
         </div>
          </Provider>
     )

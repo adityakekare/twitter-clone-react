@@ -6,6 +6,7 @@ import {getCurrentProfile} from "../../../../services/profileService";
 const profileData = (state) => state.profile;
 const Profile = () => {
 	const data = useSelector(profileData);
+	// console.log(data);
 	const dispatch = useDispatch();
 	useEffect(() => getCurrentProfile(dispatch), []);
     return(
