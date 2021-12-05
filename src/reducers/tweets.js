@@ -34,20 +34,15 @@ const tweets = (state = tweetsJson, action) => {
                 return action.tweet;
             }
             const tweet = {
-                _id: (new Date()).getTime() + '',
-                "topic": "Web Development",
-                "userName": "ReactJS",
-                "verified": false,
-                "handle": "ReactJS",
+                "_id" : (new Date()).getTime() + '',
+                "caption": "Web Development",
+                "author": "Elon Musk",
+                "handle": "elonmusk",
                 "time": "2h",
+                "image": "../../images/elon.jpg",
+                "likes": 0,
+                "text": "",
                 ...action.tweet,
-                "avatar-image": "../../../images/react-blue.png",
-                "logo-image": "../../../images/react-blue.png",
-                "stats": {
-                    "comments": 123,
-                    "retweets": 234,
-                    "likes": 345
-                },
             };
             return ([
                     tweet,
