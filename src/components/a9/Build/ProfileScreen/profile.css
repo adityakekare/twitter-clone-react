@@ -1,0 +1,51 @@
+.wd-iFirst{
+    margin-right: 10px;
+}
+
+.wd-i{
+    margin-right: 10px;
+    margin-left: 55px;
+    margin-top: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wd-right{
+    padding-top: 5px;
+    color: #808080;
+    float: right;
+}
+
+.wd-profile-cover-img{
+    width: 100%;
+}
+
+.wd-disp-img{
+    position: sticky;
+    width: 150px;
+    height: 175px;
+    /* float: left; */
+    top: 170px;
+    border: solid 5px #222222;
+    margin-top: -90px;
+    border-radius: 90%;
+
+}
+
+.btn-light{
+    border-color: grey !important;
+    float: right;
+}
+
+.wd-profile-desc{
+    line-height: 0px;
+    color: #808080;
+    margin: 0px;
+    font-size: small;
+}
+
+
+
+

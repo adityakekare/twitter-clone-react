@@ -12,7 +12,7 @@ const NavigationSidebar = (
             <>
             <div>
                 <nav className="wd-first-column">
-                    <Link to="/a7/" className="list-group-item list-group-item-action">
+                    <Link to="/a8/" className="list-group-item list-group-item-action">
                         <i className="fa fa-twitter fa-2x"/>
                     </Link>
                     <ul className="nav flex-column">

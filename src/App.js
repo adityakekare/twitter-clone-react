@@ -10,6 +10,7 @@ import A7 from './components/a7';
 import A8 from './components/a8';
 import Components from './components';
 import {BrowserRouter, Route} from "react-router-dom";
+import A9 from "./components/a9";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/a8" >
             <A8 />
+          </Route>
+          <Route path="/a9" >
+            <A9 />
           </Route>
         </div>
       </BrowserRouter>

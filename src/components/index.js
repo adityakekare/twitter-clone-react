@@ -12,6 +12,9 @@ const Components = () => {
             </Link> |
             <Link to="/a8">
                 A8
+            </Link> |
+            <Link to="/a9">
+                A9
             </Link>
         </>
     )
