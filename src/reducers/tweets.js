@@ -2,7 +2,7 @@ import tweetsJson from './data/tweets.json';
 
 // console.log(tweetsJson);
 const tweets = (state = tweetsJson, action) => {
-    console.log(action.tweet);
+    // console.log(action.tweet);
     switch (action.type) {
         case 'fetch-all-tweets':
             return(
