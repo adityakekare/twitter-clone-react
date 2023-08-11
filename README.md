@@ -1,10 +1,17 @@
-# Web-dev Assignment: Twitter clone
+# Twitter clone
 
-### Links:
+This is a clone of the Twitter website developed using React, Redux, and Node. Users can Edit Profiles, Post tweets, delete tweets, and edit tweets.
 
-#### Deployment
-[React App](https://distracted-montalcini-caf8c6.netlify.app) | 
-[Node App](https://heroku-node-app-2021.herokuapp.com/hello)
+### Screenshots:
 
-#### Git
-[Node App](https://github.com/adityakekare/web-dev-node)
+#### Home Page:
+![Home](res/twitter_1.png)
+
+#### Explore Page:
+![Explore](res/twitter_2.png)
+
+#### Profile Page:
+![Profile](res/twitter_3.png)
+
+
+
